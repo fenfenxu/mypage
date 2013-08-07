@@ -29,6 +29,12 @@ else
 app.use assets()
 # Set the public folder as static assets.
 app.use express.static(process.cwd() + '/public')
+
+
+#app.use express.static('docs' , process.cwd() + '/docs')
+#app.use express.directory('docs', process.cwd() + '/docs')
+
+
 # Express Session
 store = new express.session.MemoryStore
 app.use express.cookieParser()

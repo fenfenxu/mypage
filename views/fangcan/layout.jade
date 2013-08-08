@@ -1,24 +1,32 @@
 !!! 5
-//if lt IE 7 ]><html class="ie ie6" lang="en">
-//if IE 7 ]><html class="ie ie7" lang="en">
-//if IE 8 ]><html class="ie ie8" lang="en">
-// [if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]
+//if lt IE 7 ]><html class='ie ie6' lang='en'>
+//if IE 7 ]><html class='ie ie7' lang='en'>
+//if IE 8 ]><html class='ie ie8' lang='en'>
+// [if (gte IE 9)|!(IE)]><!--><html lang='en'> <!--<![endif]
 head
   meta(charset='utf-8')
   title Express CoffeeScript Template
+  meta(name='viewport', content='initial-scale=1, maximum-scale=1, user-scalable=no')
+  meta(name='apple-mobile-web-app-capable', content='yes')
+  meta(name='apple-mobile-web-app-status-bar-style', content='black')
   meta(name='description', content='')
   meta(name='author', content='')
-  // Mobile Specific
-  meta(name="viewport", content="width=device-width, initial-scale=1.0")
 
   // CSS
   != css('app')
   
+  style(href='lib/junior/stylesheets/ratchet.css')
+  style(href='lib/juior/stylesheets/junior.css')
 body
-  block content
-
-  script(src = '/js/libs/jquery/1.9.1/jquery.min.js')
-  script(src = 'js/libs/twitter-bootstrap/2.3.1/bootstrap.min.js')
-  != js('app')
+  script(src='lib/junior/javascripts/modernizr.custom.15848.js')
+  script(src='lib/junior/javascripts/zepto.min.js')
+  script(src='lib/junior/javascripts/zepto.flickable.min.js')
+  script(src='lib/junior/javascripts/lodash.min.js')
+  script(src='lib/junior/javascripts/backbone-min.js')
+  script(src='lib/junior/javascripts/junior.js')
+  .iphone-window
+     .app-container
+         .app-main
+            block content
 
 | </html>

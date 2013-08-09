@@ -1,0 +1,49 @@
+!!! 5
+//if lt IE 7 ]><html class='ie ie6' lang='en'>
+//if IE 7 ]><html class='ie ie7' lang='en'>
+//if IE 8 ]><html class='ie ie8' lang='en'>
+// [if (gte IE 9)|!(IE)]><!--><html lang='en'> <!--<![endif]
+head
+  meta(charset='utf-8')
+  title 济南房产 
+  meta(name='viewport', content='initial-scale=1, maximum-scale=1, user-scalable=no')
+  meta(name='apple-mobile-web-app-capable', content='yes')
+  meta(name='apple-mobile-web-app-status-bar-style', content='black')
+  meta(name='description', content='')
+  meta(name='author', content='')
+
+  link( rel="apple-touch-icon-precomposed", sizes="114x114", href="../liratchet/touch-icons/apple-touch-icon-114x114.png")  
+  link(rel='stylesheet', href='/lib/ratchet/ratchet.css')
+  link(rel='stylesheet', href='/css/ratchet-app.css')
+body
+
+
+  header.bar-title
+    h1.title Movie finder
+
+  nav.bar-standard.bar-header-secondary
+    form
+      input(type='search', placeholder='Search')
+
+  nav.bar-tab
+    ul.tab-inner
+      //- .active
+      li.tab-item
+        a(href='/ratchet/', data-transition='fade')
+          img.tab-icon(src='/ratchet-app/img/icon-hamburger.png')
+          div.tab-label Movies
+      li.tab-item
+        a(href='/ratchet/theaters', data-transition='fade')
+          img.tab-icon(src='/ratchet-app/img/icon-hamburger.png')
+          div.tab-label Theaters
+      li.tab-item
+        a(href='/ratchet/settings', data-transition='fade')
+          img.tab-icon(src='/ratchet-app/img/icon-hamburger.png')
+          div.tab-label Settings
+
+
+  
+  script(src='/lib/ratchet/ratchet.js')
+  block content
+
+| </html>

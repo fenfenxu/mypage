@@ -5,28 +5,26 @@
 // [if (gte IE 9)|!(IE)]><!--><html lang='en'> <!--<![endif]
 head
   meta(charset='utf-8')
-  title Express CoffeeScript Template
+  title 济南房产 
   meta(name='viewport', content='initial-scale=1, maximum-scale=1, user-scalable=no')
   meta(name='apple-mobile-web-app-capable', content='yes')
   meta(name='apple-mobile-web-app-status-bar-style', content='black')
   meta(name='description', content='')
   meta(name='author', content='')
 
-  // CSS
-  != css('app')
   
-  style(href='lib/junior/stylesheets/ratchet.css')
-  style(href='lib/juior/stylesheets/junior.css')
+  link(rel='stylesheet', href='/lib/junior/stylesheets/ratchet.css')
+  link(rel='stylesheet', href='/lib/junior/stylesheets/junior.css')
 body
-  script(src='lib/junior/javascripts/modernizr.custom.15848.js')
-  script(src='lib/junior/javascripts/zepto.min.js')
-  script(src='lib/junior/javascripts/zepto.flickable.min.js')
-  script(src='lib/junior/javascripts/lodash.min.js')
-  script(src='lib/junior/javascripts/backbone-min.js')
-  script(src='lib/junior/javascripts/junior.js')
-  .iphone-window
-     .app-container
-         .app-main
+  script(src='/lib/junior/javascripts/modernizr.custom.15848.js')
+  script(src='/lib/junior/javascripts/zepto.min.js')
+  script(src='/lib/junior/javascripts/zepto.flickable.min.js')
+  script(src='/lib/junior/javascripts/lodash.min.js')
+  script(src='/lib/junior/javascripts/backbone-min.js')
+  script(src='/lib/junior/javascripts/junior.js')
+  #iphone-window
+     #app-container
+         #app-main
             block content
 
 | </html>

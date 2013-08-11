@@ -1,3 +1,24 @@
 extends layout
 block content
+    .content
+        .slider
+            ul
+                li: img(src='/ratchet-app/img/argo.png')
+                li: img(src='/ratchet-app/img/skyfall.png')
+                li: img(src='/ratchet-app/img/ralph.png')
+        
+        .list
+            li.list-divider Recommended movies
+            li: a(href='choose-theater.html')
+                strong Skyfall: 007
+                p Lorem ipsum dolor sit amet dasd
+                span.chevron
+
+            li: a(href='choose-theater.html',  data-transition="slide-in")
+                strong Skyfall: 007
+                p Lorem ipsum dolor sit amet
+                span.chevron
+
   //script(src = '/js/fangcan.js')
+
+

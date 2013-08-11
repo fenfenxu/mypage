@@ -1,0 +1,56 @@
+!!! 5
+//if lt IE 7 ]><html class="ie ie6" lang="en">
+//if IE 7 ]><html class="ie ie7" lang="en">
+//if IE 8 ]><html class="ie ie8" lang="en">
+// [if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]
+head
+    meta(charset='utf-8')
+    title Bootstrap 
+    meta(name='description', content='')
+    meta(name='author', content='')
+    // Mobile Specific
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(href="/lib/bootstrap/css/bootstrap.css", rel="stylesheet", media="screen")
+    link(href="/css/bootstrap-app.css", rel="stylesheet", media="screen")
+    style
+        
+body
+    
+    
+        .navbar-fixed-top
+            .header
+                .container-narrow
+                    button.navbar-toggle(type="button", data-toggle="collapse", data-target=".nav-collapse")
+                        span.icon-bar
+                        span.icon-bar
+                        span.icon-bar
+                    
+                    .nav-collapse.collapse.pull-right
+                        ul.nav.nav-pills
+                            li
+                                a(href='#') Home
+                            li
+                                a(href='about') About
+                            li
+                                a(href='about') Contant
+                    h1 Happy ending ...
+        .container-narrow
+            block content
+       
+    
+        .footer
+            .container-narrow
+                p.text-muted.credit Mail to   
+                    a(href='mailto://liuluxu1989@126.com') author
+
+
+        // JavaScript plugins (requires jQuery)
+        script(src='/js/libs/jquery/1.9.1/jquery.min.js')
+        //  Include all compiled plugins (below), or include individual files as needed
+        script(src='/lib/bootstrap/js/bootstrap.min.js')
+    
+        // Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond)
+
+
+| </html>
+  
